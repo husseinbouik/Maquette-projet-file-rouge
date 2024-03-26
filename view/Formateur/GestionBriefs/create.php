@@ -116,10 +116,12 @@
                                                         <div class="form-group">
                                                             <div class="d-flex justify-content-between">
                                                                 <label class="btn btn-secondary">
-                                                                    <input type="checkbox" name="competence" id="competence_mobile" value="imiter">
+                                                                    <input type="checkbox" name="competence"
+                                                                        id="competence_mobile" value="imiter">
                                                                     <i class="fas fa-mobile-alt"></i> Maquettage
                                                                 </label>
-                                                                <select name="competence_mobile_level" class="form-control">
+                                                                <select name="competence_mobile_level"
+                                                                    class="form-control">
                                                                     <option value="imiter">Imiter</option>
                                                                     <option value="adapter">Adapter</option>
                                                                     <option value="transposer">Transposer</option>
@@ -130,7 +132,8 @@
                                                         <div class="form-group">
                                                             <div class="d-flex justify-content-between">
                                                                 <label class="btn btn-secondary">
-                                                                    <input type="checkbox" name="competence" id="competence_db" value="adapter">
+                                                                    <input type="checkbox" name="competence"
+                                                                        id="competence_db" value="adapter">
                                                                     <i class="fas fa-database"></i> Base de données
                                                                 </label>
                                                                 <select name="competence_db_level" class="form-control">
@@ -144,10 +147,13 @@
                                                         <div class="form-group">
                                                             <div class="d-flex justify-content-between">
                                                                 <label class="btn btn-secondary">
-                                                                    <input type="checkbox" name="competence" id="competence_backend" value="transposer">
-                                                                    <i class="fas fa-code"></i> Back-end d'une application
+                                                                    <input type="checkbox" name="competence"
+                                                                        id="competence_backend" value="transposer">
+                                                                    <i class="fas fa-code"></i> Back-end d'une
+                                                                    application
                                                                 </label>
-                                                                <select name="competence_backend_level" class="form-control">
+                                                                <select name="competence_backend_level"
+                                                                    class="form-control">
                                                                     <option value="imiter">Imiter</option>
                                                                     <option value="adapter">Adapter</option>
                                                                     <option value="transposer">Transposer</option>
@@ -158,10 +164,12 @@
                                                         <div class="form-group">
                                                             <div class="d-flex justify-content-between">
                                                                 <label class="btn btn-secondary">
-                                                                    <input type="checkbox" name="competence" id="competence_deploy" value="other">
+                                                                    <input type="checkbox" name="competence"
+                                                                        id="competence_deploy" value="other">
                                                                     <i class="fas fa-cogs"></i> Déploiement
                                                                 </label>
-                                                                <select name="competence_deploy_level" class="form-control">
+                                                                <select name="competence_deploy_level"
+                                                                    class="form-control">
                                                                     <option value="imiter">Imiter</option>
                                                                     <option value="adapter">Adapter</option>
                                                                     <option value="transposer">Transposer</option>
@@ -172,28 +180,50 @@
 
                                                 </div>
                                                 <button class="btn btn-primary"
+                                                    onclick="stepper.previous()">Previous</button>
+                                                <button class="btn btn-primary"
                                                     onclick="stepper.next()">Suivant</button>
                                             </div>
                                             <div id="affectation-part" class="content" role="tabpanel"
                                                 aria-labelledby="affectation-part-trigger">
-                                                <div class="d-flex flex-wrap mt-3">
-                                                    <select name="apprenants" class="form-control">
-                                                        <option value="sarsri imrane">Sarsri Imrane</option>
-                                                        <option value="Grain Reda">Grain Reda</option>
-                                                        <option value="Bouik Hussein" selected>Bouik Hussein</option>
-                                                        <option value="Assaid Amina">Assaid Amina</option>
-                                                        <option value="zaani hamza">Zaani Hamza</option>
-                                                        <option value="FAIZ SAFAA">Faiz Safaa</option>
-                                                        <option value="El ajoumi Mohammed aymane">El Ajoumi Mohammed Aymane</option>
-                                                        <option value="Lharrak Adnan">Lharrak Adnan</option>
-                                                        <option value="YASMINE DAIFANE">Yasmine Daifane</option>
-                                                        <option value="BEN NASAR ADNAN">Ben Nasar Adnan</option>
-                                                        <option value="Achaou Hamid">Achaou Hamid</option>
-                                                        <option value="Betroji Jalil">Betroji Jalil</option>
-                                                        <option value="lamchatab amine">Lamchatab Amine</option>
-                                                        <option value="Boukhar Soufiane">Boukhar Soufiane</option>
-                                                    </select>
+                                                <div class="d-flex flex-column mt-3">
+                                                    <input type="checkbox" id="checkAll">Check All<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="sarsri imrane">Sarsri Imrane<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="Grain Reda">Grain
+                                                    Reda<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="Bouik Hussein">Bouik Hussein<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="Assaid Amina">Assaid Amina<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="zaani hamza">Zaani
+                                                    Hamza<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="FAIZ SAFAA">Faiz
+                                                    Safaa<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="El ajoumi Mohammed aymane">El Ajoumi Mohammed Aymane<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="Lharrak Adnan">Lharrak Adnan<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="YASMINE DAIFANE">Yasmine Daifane<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="BEN NASAR ADNAN">Ben Nasar Adnan<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="Achaou Hamid">Achaou Hamid<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="Betroji Jalil">Betroji Jalil<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="lamchatab amine">Lamchatab Amine<br>
+                                                    <input type="checkbox" name="apprenants[]" class="apprenant"
+                                                        value="Boukhar Soufiane">Boukhar Soufiane<br>
                                                 </div>
+
+                                                <button class="btn btn-primary"
+                                                    onclick="stepper.previous()">Previous</button>
+                                                <a href="./index.php" type="submit" class="btn btn-primary">Submit</a>
                                             </div>
                                         </div>
                                     </div>
@@ -246,6 +276,14 @@
             selector: 'textarea',
             plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
             toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
+    </script>
+    <script>
+        document.getElementById('checkAll').addEventListener('change', function () {
+            var checkboxes = document.querySelectorAll('input.apprenant');
+            for (var checkbox of checkboxes) {
+                checkbox.checked = this.checked;
+            }
         });
     </script>
     <script>
